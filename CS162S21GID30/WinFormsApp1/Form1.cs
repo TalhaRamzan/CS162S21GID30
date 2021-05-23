@@ -49,36 +49,50 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked == true)
+            String a = textBox1.Text;
+            String b = textBox2.Text;
+            if (a == "Admin" && b == "Admin")
             {
-                this.Hide();
-                Form2 f2 = new Form2(); //this is the change, code for redirect  
-                f2.ShowDialog();
-            }
-            else if (radioButton2.Checked == true)
-            {
-                this.Hide();
-                Form3 f3 = new Form3(); //this is the change, code for redirect  
-                f3.ShowDialog();
 
-            }
+                if (radioButton1.Checked == true)
+                {
+                    this.Hide();
+                    Form2 f2 = new Form2(); //this is the change, code for redirect  
+                    f2.ShowDialog();
+                }
+                else if (radioButton2.Checked == true)
+                {
+                    this.Hide();
+                    Form3 f3 = new Form3(); //this is the change, code for redirect  
+                    f3.ShowDialog();
 
-            else if (radioButton3.Checked == true)
-            {
-                this.Hide();
-                Form4 f4 = new Form4(); //this is the change, code for redirect  
-                f4.ShowDialog();
+                }
+
+                else if (radioButton3.Checked == true)
+                {
+                    this.Hide();
+                    Form4 f4 = new Form4(); //this is the change, code for redirect  
+                    f4.ShowDialog();
+
+                }
+                else
+                {
+                    MessageBox.Show("Please Select a User.");
+                }
 
             }
             else
             {
-                MessageBox.Show("Please select a user.");
+                MessageBox.Show("Please enter username and password again.");
             }
+
+            
+
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Zehan Tay Zor Daal.");
+            MessageBox.Show("Zehan Pr Zor Daal.");
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -89,6 +103,11 @@ namespace WinFormsApp1
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

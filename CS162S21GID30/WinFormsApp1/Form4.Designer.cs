@@ -136,7 +136,7 @@ namespace WinFormsApp1
             this.Controls.Add(this.button1);
             this.Controls.Add(this.LOGIN);
             this.Name = "Form4";
-            this.Text = "Course Management System";
+            this.Text = "Form4";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form4_FormClosing);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

@@ -83,7 +83,7 @@ namespace WinFormsApp1
             }
             else
             {
-                MessageBox.Show("Please Re_enter username and password.");
+                MessageBox.Show("Please enter username and password again.");
             }
 
             

@@ -111,7 +111,6 @@ namespace WinFormsApp1
             this.button5.TabIndex = 8;
             this.button5.Text = "Edit Existing ID";
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // pictureBox1
             // 

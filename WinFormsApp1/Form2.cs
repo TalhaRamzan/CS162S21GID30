@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace WinFormsApp1
 {
-    public partial class Form3 : Form
+    public partial class Form2 : Form
     {
-        public Form3()
+        public Form2()
         {
             InitializeComponent();
         }
@@ -18,16 +18,26 @@ namespace WinFormsApp1
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form1 f1 = new Form1();
+            Form1 f1 = new Form1();  
             f1.ShowDialog();
         }
 
-        private void Form3_FormClosing(object sender, FormClosingEventArgs e)
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }

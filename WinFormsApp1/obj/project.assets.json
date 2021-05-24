@@ -13,11 +13,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
+      "projectUniqueName": "C:\\Users\\Syed Bilal Hashmi\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj",
+      "projectName": "WinFormsApp1",
+      "projectPath": "C:\\Users\\Syed Bilal Hashmi\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj",
+      "packagesPath": "C:\\Users\\Syed Bilal Hashmi\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Syed Bilal Hashmi\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\obj\\",
+=======
       "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj",
       "projectName": "WinFormsApp1",
       "projectPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\obj\\",
+>>>>>>> 7480a52c8d233f7729ce891eaa95988c3a1225c3
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",

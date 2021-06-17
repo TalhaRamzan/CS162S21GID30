@@ -86,7 +86,7 @@ namespace WinFormsApp1
                 MessageBox.Show("Please enter username and password again.");
             }
 
-            
+
 
         }
 
@@ -106,6 +106,24 @@ namespace WinFormsApp1
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                textBox2.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                textBox2.UseSystemPasswordChar = false;
+            }
+
+        }
+
+        private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
 
         }

@@ -102,6 +102,7 @@ namespace WinFormsApp1
             // 
             this.textBox2.Location = new System.Drawing.Point(378, 242);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
             this.textBox2.Size = new System.Drawing.Size(207, 23);
@@ -118,6 +119,7 @@ namespace WinFormsApp1
             this.checkBox1.TabIndex = 6;
             this.checkBox1.Text = "Show Password";
             this.checkBox1.UseVisualStyleBackColor = true;
+            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -155,6 +157,7 @@ namespace WinFormsApp1
             this.radioButton3.TabStop = true;
             this.radioButton3.Text = "Student";
             this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButton3.CheckedChanged += new System.EventHandler(this.radioButton3_CheckedChanged);
             // 
             // button1
             // 

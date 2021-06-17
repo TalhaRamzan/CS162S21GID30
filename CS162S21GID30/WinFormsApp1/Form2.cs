@@ -34,7 +34,9 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            Form5 f5 = new Form5(); //this is the change, code for redirect  
+            f5.ShowDialog();
         }
     }
 }

@@ -14,6 +14,10 @@ namespace WinFormsApp1
         {
             InitializeComponent();
             textBox6.Enabled = false;
+            textBox9.Enabled = false;
+            textBox7.Enabled = false;
+            textBox8.Enabled = false;
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -40,14 +44,39 @@ namespace WinFormsApp1
         {
             if (radioButton1.Checked) {
                 textBox6.Enabled=true;
-                
-            
+                textBox9.Enabled = true;
+
             }
             else
             {
                 textBox6.Enabled = false;
+                textBox9.Enabled = false;
 
             }
+            if (radioButton2.Checked)
+            {
+                textBox7.Enabled = true;
+                textBox8.Enabled = true;
+
+            }
+            else
+            {
+                textBox7.Enabled = false;
+                textBox8.Enabled = false;
+
+            }
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.ShowDialog();
         }
     }
 }

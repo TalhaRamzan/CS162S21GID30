@@ -56,3 +56,7 @@ C:\Users\Syed Bilal Hashmi\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinForms
 C:\Users\Syed Bilal Hashmi\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.pdb
 C:\Users\Syed Bilal Hashmi\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.genruntimeconfig.cache
 C:\Users\LENOVO\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Form5.resources
+C:\Users\Syed Bilal Hashmi\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Form5.resources
+C:\Users\Syed Bilal Hashmi\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Form6.resources
+C:\Users\Syed Bilal Hashmi\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Form7.resources
+C:\Users\Syed Bilal Hashmi\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Form8.resources

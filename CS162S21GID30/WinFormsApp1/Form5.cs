@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -91,7 +92,36 @@ namespace WinFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("ID has been successfully saved.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            String na = textBox1.Text;
+            String dob = dateTimePicker1.Text;
+            String gender= comboBox1.Text;
+            String email = textBox5.Text;
+            String password = textBox4.Text;
+            String cpassword = textBox1.Text;
+            String tsub = textBox6.Text;
+            String rnum = textBox7.Text;
+            String section= textBox8.Text;
+            String qual= textBox9.Text;
+            Student S = new Student();
+            S.Name = na;
+           // S.DOB = dob.TryParse(str, out dt); 
+            S.Gender = gender;
+            S.Email = email;
+          //  if(password == cpassword)
+                S.Password = password;
+           // else
+             //   MessageBox.Show("Password Does not match");
+            S.Rollno = rnum;
+            S.Section = section;
+            S.setlist(S);
+
+
+
+
+
+
+
+            //MessageBox.Show("ID has been successfully saved.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
@@ -100,6 +130,36 @@ namespace WinFormsApp1
         }
 
         private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
         {
 
         }

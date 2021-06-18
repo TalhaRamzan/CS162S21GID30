@@ -71,9 +71,9 @@ namespace WinFormsApp1
             this.button1.BackColor = System.Drawing.Color.YellowGreen;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(421, 313);
+            this.button1.Location = new System.Drawing.Point(452, 321);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 76);
+            this.button1.Size = new System.Drawing.Size(156, 76);
             this.button1.TabIndex = 11;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
@@ -84,9 +84,9 @@ namespace WinFormsApp1
             this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(291, 417);
+            this.button4.Location = new System.Drawing.Point(423, 420);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(522, 68);
+            this.button4.Size = new System.Drawing.Size(222, 68);
             this.button4.TabIndex = 22;
             this.button4.Text = "Go Back";
             this.button4.UseVisualStyleBackColor = false;

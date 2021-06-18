@@ -78,5 +78,30 @@ namespace WinFormsApp1
             Form2 f2 = new Form2();
             f2.ShowDialog();
         }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("ID has been successfully saved.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
+        {
+
+        }
+
+        private void Form5_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

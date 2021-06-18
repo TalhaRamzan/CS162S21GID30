@@ -26,7 +26,7 @@ namespace WinFormsApp1
             d = MessageBox.Show("Are you sure you want to delete this ID?","Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (d == DialogResult.Yes)
             {
-                MessageBox.Show("ID has been successfully deleted.","Info", MessageBoxButtons.OK);
+                MessageBox.Show("ID has been successfully deleted.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

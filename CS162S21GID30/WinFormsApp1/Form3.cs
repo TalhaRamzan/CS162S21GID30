@@ -29,7 +29,21 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            this.Hide();
+            Form9 f9 = new Form9();  
+            f9.ShowDialog();
+        }
 
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form10 f10= new Form10();
+            f10.ShowDialog();
         }
     }
 }

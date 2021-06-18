@@ -38,7 +38,6 @@ namespace WinFormsApp1
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -56,6 +55,7 @@ namespace WinFormsApp1
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // button4
@@ -63,9 +63,9 @@ namespace WinFormsApp1
             this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(258, 643);
+            this.button4.Location = new System.Drawing.Point(426, 643);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(522, 68);
+            this.button4.Size = new System.Drawing.Size(187, 68);
             this.button4.TabIndex = 28;
             this.button4.Text = "Go Back";
             this.button4.UseVisualStyleBackColor = false;
@@ -145,16 +145,8 @@ namespace WinFormsApp1
             this.textBox2.Location = new System.Drawing.Point(675, 253);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 27);
+            this.textBox2.Size = new System.Drawing.Size(262, 27);
             this.textBox2.TabIndex = 36;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(675, 137);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(187, 27);
-            this.textBox3.TabIndex = 37;
             // 
             // textBox4
             // 
@@ -200,13 +192,14 @@ namespace WinFormsApp1
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "STUDENT";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // textBox5
             // 
             this.textBox5.Location = new System.Drawing.Point(675, 197);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(187, 27);
+            this.textBox5.Size = new System.Drawing.Size(262, 27);
             this.textBox5.TabIndex = 42;
             // 
             // label6
@@ -226,6 +219,7 @@ namespace WinFormsApp1
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(187, 27);
             this.textBox6.TabIndex = 44;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // textBox7
             // 
@@ -317,19 +311,28 @@ namespace WinFormsApp1
             this.button1.BackColor = System.Drawing.Color.YellowGreen;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(408, 561);
+            this.button1.Location = new System.Drawing.Point(442, 561);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(217, 76);
+            this.button1.Size = new System.Drawing.Size(155, 76);
             this.button1.TabIndex = 55;
             this.button1.Text = "Save";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(675, 143);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(262, 27);
+            this.dateTimePicker1.TabIndex = 56;
             // 
             // Form5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(1013, 723);
+            this.ClientSize = new System.Drawing.Size(1239, 718);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox9);
@@ -347,7 +350,6 @@ namespace WinFormsApp1
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -360,6 +362,7 @@ namespace WinFormsApp1
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form5";
             this.Text = "Qualification";
+            this.Load += new System.EventHandler(this.Form5_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -375,7 +378,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.RadioButton radioButton1;
@@ -393,5 +395,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

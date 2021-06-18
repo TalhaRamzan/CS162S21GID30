@@ -77,17 +77,18 @@ namespace WinFormsApp1
                 }
                 else
                 {
-                    MessageBox.Show("Please Select a User.");
+                    MessageBox.Show("Please Select a User.","Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
+            else if (a == "" || b == "")
+            {
+                MessageBox.Show("Username or password cannot be left empty.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);                
+            }
             else
             {
-                MessageBox.Show("Please enter username and password again.");
+                MessageBox.Show("Please enter username and password again.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-
-
-
         }
 
         private void button2_Click(object sender, EventArgs e)

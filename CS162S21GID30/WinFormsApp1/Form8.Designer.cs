@@ -46,7 +46,6 @@ namespace WinFormsApp1
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -56,6 +55,7 @@ namespace WinFormsApp1
             this.label1 = new System.Windows.Forms.Label();
             this.LOGIN = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // button1
@@ -88,6 +88,7 @@ namespace WinFormsApp1
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(187, 27);
             this.textBox9.TabIndex = 80;
+            this.textBox9.TextChanged += new System.EventHandler(this.textBox9_TextChanged);
             // 
             // textBox8
             // 
@@ -96,6 +97,7 @@ namespace WinFormsApp1
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(187, 27);
             this.textBox8.TabIndex = 79;
+            this.textBox8.TextChanged += new System.EventHandler(this.textBox8_TextChanged);
             // 
             // label11
             // 
@@ -154,6 +156,7 @@ namespace WinFormsApp1
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(187, 27);
             this.textBox7.TabIndex = 73;
+            this.textBox7.TextChanged += new System.EventHandler(this.textBox7_TextChanged);
             // 
             // textBox6
             // 
@@ -162,6 +165,7 @@ namespace WinFormsApp1
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(187, 27);
             this.textBox6.TabIndex = 72;
+            this.textBox6.TextChanged += new System.EventHandler(this.textBox6_TextChanged);
             // 
             // label6
             // 
@@ -178,13 +182,13 @@ namespace WinFormsApp1
             this.textBox5.Location = new System.Drawing.Point(701, 221);
             this.textBox5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(187, 27);
+            this.textBox5.Size = new System.Drawing.Size(262, 27);
             this.textBox5.TabIndex = 70;
             // 
             // radioButton2
             // 
             this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(577, 344);
+            this.radioButton2.Location = new System.Drawing.Point(571, 344);
             this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(94, 24);
@@ -192,6 +196,7 @@ namespace WinFormsApp1
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "STUDENT";
             this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButton2.CheckedChanged += new System.EventHandler(this.radioButton2_CheckedChanged);
             // 
             // radioButton1
             // 
@@ -204,6 +209,7 @@ namespace WinFormsApp1
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "TEACHER";
             this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged);
             // 
             // comboBox1
             // 
@@ -225,20 +231,12 @@ namespace WinFormsApp1
             this.textBox4.Size = new System.Drawing.Size(187, 27);
             this.textBox4.TabIndex = 66;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(701, 161);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(187, 27);
-            this.textBox3.TabIndex = 65;
-            // 
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(701, 277);
             this.textBox2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(187, 27);
+            this.textBox2.Size = new System.Drawing.Size(262, 27);
             this.textBox2.TabIndex = 64;
             // 
             // label5
@@ -316,13 +314,20 @@ namespace WinFormsApp1
             this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(293, 712);
+            this.button4.Location = new System.Drawing.Point(431, 715);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(522, 68);
+            this.button4.Size = new System.Drawing.Size(264, 68);
             this.button4.TabIndex = 56;
             this.button4.Text = "Go Back";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Location = new System.Drawing.Point(701, 166);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(262, 27);
+            this.dateTimePicker1.TabIndex = 83;
             // 
             // Form8
             // 
@@ -330,6 +335,7 @@ namespace WinFormsApp1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
             this.ClientSize = new System.Drawing.Size(1106, 830);
+            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.textBox9);
@@ -347,7 +353,6 @@ namespace WinFormsApp1
             this.Controls.Add(this.radioButton1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -383,7 +388,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -393,5 +397,6 @@ namespace WinFormsApp1
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label LOGIN;
         private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
     }
 }

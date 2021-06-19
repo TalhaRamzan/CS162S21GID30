@@ -14,9 +14,21 @@ namespace WinFormsApp1
         {
             InitializeComponent();
             textBox6.Enabled = false;
+            textBox9.Enabled = false;
             textBox7.Enabled = false;
             textBox8.Enabled = false;
-            textBox9.Enabled = false;
+            if (Person.Obj.flag == false)
+            {
+                textBox7.Enabled = true;
+                textBox8.Enabled = true;
+
+            }
+            else
+            {
+                textBox6.Enabled = true;
+                textBox9.Enabled = true;
+            }
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -41,21 +53,7 @@ namespace WinFormsApp1
             MessageBox.Show("Changes have been successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton1.Checked)
-            {
-                textBox6.Enabled = true;
-                textBox9.Enabled = true;
-
-            }
-            else
-            {
-                textBox6.Enabled = false;
-                textBox9.Enabled = false;
-            }
-        }
-
+       
         private void textBox6_TextChanged(object sender, EventArgs e)
         {
 
@@ -76,19 +74,6 @@ namespace WinFormsApp1
 
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radioButton2.Checked)
-            {
-                textBox7.Enabled = true;
-                textBox8.Enabled = true;
-
-            }
-            else
-            {
-                textBox7.Enabled = false;
-                textBox8.Enabled = false;
-            }
-        }
+      
     }
 }

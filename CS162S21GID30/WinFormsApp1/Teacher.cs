@@ -35,7 +35,7 @@ namespace WinFormsApp1
             get { return this.subject; }
             set { this.subject = value; }
         }
-        public List<Teacher> getlist()
+        public List<Teacher> getList()
         {
             return list;
         }

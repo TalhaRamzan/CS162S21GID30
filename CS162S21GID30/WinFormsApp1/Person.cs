@@ -22,6 +22,7 @@ namespace WinFormsApp1
                 return obj;
             }
         }
+        public Boolean flag=false;
         private string name;
         private DateTime dOB;
         private string password;

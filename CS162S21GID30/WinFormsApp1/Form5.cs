@@ -54,7 +54,7 @@ namespace WinFormsApp1
                 textBox9.Enabled = false;
 
             }
-            if (radioButton2.Checked)
+             if (radioButton2.Checked)
             {
                 textBox7.Enabled = true;
                 textBox8.Enabled = true;
@@ -87,42 +87,83 @@ namespace WinFormsApp1
 
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
+            if (radioButton2.Checked)
+            {
+                textBox7.Enabled = true;
+                textBox8.Enabled = true;
+
+            }
+            else
+            {
+                textBox7.Enabled = false;
+                textBox8.Enabled = false;
+
+            }
 
         }
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            String na = textBox1.Text;
-            String dob = dateTimePicker1.Text;
-            String gender= comboBox1.Text;
-            String email = textBox5.Text;
-            String password = textBox4.Text;
-            String cpassword = textBox1.Text;
-            String tsub = textBox6.Text;
-            String rnum = textBox7.Text;
-            String section= textBox8.Text;
-            String qual= textBox9.Text;
-            Student S = new Student();
-            S.Name = na;
-           // S.DOB = dob.TryParse(str, out dt); 
-            S.Gender = gender;
-            S.Email = email;
-          //  if(password == cpassword)
-                S.Password = password;
-           // else
-             //   MessageBox.Show("Password Does not match");
-            S.Rollno = rnum;
-            S.Section = section;
-            S.setlist(S);
+            if (radioButton2.Checked)
+            {
+                String na = textBox1.Text;
+                String dob = dateTimePicker1.Text;
+                String gender = comboBox1.Text;
+                String email = textBox5.Text;
+                String password = textBox4.Text;
+                String cpassword = textBox2.Text;
+                String rnum = textBox7.Text;
+                String section = textBox8.Text;
+                Student S = new Student();
+                S.Name = na;
+                S.DOB = Convert.ToDateTime(dob);
+                S.Gender = gender;
+                S.Email = email;
+                if (password == cpassword)
+                {
+                    S.Password = password;
+                  
+                }
 
+                else
+                { MessageBox.Show("Password Does not match","Rewrite Password",MessageBoxButtons.RetryCancel,MessageBoxIcon.Warning); }
+                S.Rollno = rnum;
+                S.Section = section;
+                Student.Obj.setlist(S);
+             //   MessageBox.Show(Student.Obj.getList().ElementAt(0).Rollno);//Checking List 
 
+            }
+            if (radioButton1.Checked)
+            {
 
+                String na = textBox1.Text;
+                String dob = dateTimePicker1.Text;
+                String gender = comboBox1.Text;
+                String email = textBox5.Text;
+                String password = textBox4.Text;
+                String cpassword = textBox2.Text;
+                String tsub = textBox6.Text;
+                String Qual = textBox9.Text;
+                Teacher T= new Teacher();
+                T.Name = na;
+                T.DOB = Convert.ToDateTime(dob);
+                T.Gender = gender;
+                T.Email = email;
+                if (password == cpassword)
+                {
+                    T.Password = password;
+                }
 
+                else
+                { MessageBox.Show("Password Does not match", "Rewrite Password", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning); }
+                T.Qualifation = Qual;
+                T.Subject = tsub;
+                Teacher.Obj.setlist(T);
+             //   MessageBox.Show(Teacher.Obj.getList().ElementAt(0).Subject); //Checking List 
+            }
 
-
-
-            //MessageBox.Show("ID has been successfully saved.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
+                //MessageBox.Show("ID has been successfully saved.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {

@@ -104,6 +104,7 @@ namespace WinFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
+            
             if (radioButton2.Checked)
             {
                 String na = textBox1.Text;
@@ -130,6 +131,7 @@ namespace WinFormsApp1
                 S.Rollno = rnum;
                 S.Section = section;
                 Student.Obj.setlist(S);
+
              //   MessageBox.Show(Student.Obj.getList().ElementAt(0).Rollno);//Checking List 
 
             }
@@ -158,12 +160,12 @@ namespace WinFormsApp1
                 { MessageBox.Show("Password Does not match", "Rewrite Password", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning); }
                 T.Qualifation = Qual;
                 T.Subject = tsub;
-                Teacher.Obj.setlist(T);
+                Teacher.TeacherObj.setlist(T);
              //   MessageBox.Show(Teacher.Obj.getList().ElementAt(0).Subject); //Checking List 
             }
-
-                //MessageBox.Show("ID has been successfully saved.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            Student.Obj.saveData();
+            //MessageBox.Show("ID has been successfully saved.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)
         {

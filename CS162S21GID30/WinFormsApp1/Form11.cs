@@ -42,5 +42,10 @@ namespace WinFormsApp1
             Form3 f3 = new Form3();
             f3.ShowDialog();
         }
+
+        private void Form11_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

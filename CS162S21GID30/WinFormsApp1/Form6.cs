@@ -70,7 +70,7 @@ namespace WinFormsApp1
             if (radioButton1.Checked)
             {
                 
-                if (Teacher.Obj.getList().ElementAt(0).Email == textBox1.Text)
+                if (Teacher.TeacherObj.getList().ElementAt(0).Email == textBox1.Text)
                 {
 
                     MessageBox.Show("In Teacher delete");

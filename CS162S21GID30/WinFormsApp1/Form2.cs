@@ -52,5 +52,19 @@ namespace WinFormsApp1
             Form7 f7 = new Form7();
             f7.ShowDialog();
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form14 f14 = new Form14();
+            f14.ShowDialog();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form13 f13 = new Form13();
+            f13.ShowDialog();
+        }
     }
 }

@@ -6,20 +6,20 @@ namespace WinFormsApp1
 {
     class Teacher : Person
     {
-        List<Teacher> list = new List<Teacher>();
-        public static Teacher obj = null;
+        List<Teacher> teacherlist = new List<Teacher>();
+        public static Teacher teacherObj = null;
 
 
 
-        public static Teacher Obj
+        public static Teacher TeacherObj
         {
             get
             {
-                if (obj == null)
+                if (teacherObj == null)
                 {
-                    obj = new Teacher();
+                    teacherObj = new Teacher();
                 }
-                return obj;
+                return teacherObj;
             }
 
         }
@@ -37,11 +37,11 @@ namespace WinFormsApp1
         }
         public List<Teacher> getList()
         {
-            return list;
+            return teacherlist;
         }
         public void setlist(Teacher s)
         {
-            list.Add(s);
+            teacherlist.Add(s);
         }
 
     }

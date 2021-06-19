@@ -67,3 +67,4 @@ C:\Users\LENOVO\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\De
 C:\Users\LENOVO\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Form7.resources
 C:\Users\LENOVO\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Form8.resources
 C:\Users\LENOVO\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Form9.resources
+C:\Users\Syed Bilal Hashmi\Documents\GitHub\CS162S21GID30\CS162S21GID30\WinFormsApp1\obj\Debug\netcoreapp3.1\WinFormsApp1.Form11.resources

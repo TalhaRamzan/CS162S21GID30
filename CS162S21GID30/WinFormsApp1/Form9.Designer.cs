@@ -70,7 +70,7 @@ namespace WinFormsApp1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(296, 176);
+            this.label1.Location = new System.Drawing.Point(296, 180);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(143, 23);
             this.label1.TabIndex = 30;
@@ -97,7 +97,7 @@ namespace WinFormsApp1
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(296, 224);
+            this.label2.Location = new System.Drawing.Point(296, 228);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(168, 23);
             this.label2.TabIndex = 34;
@@ -114,7 +114,7 @@ namespace WinFormsApp1
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(296, 266);
+            this.label3.Location = new System.Drawing.Point(296, 275);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 23);
             this.label3.TabIndex = 35;
@@ -122,7 +122,7 @@ namespace WinFormsApp1
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(479, 282);
+            this.dateTimePicker1.Location = new System.Drawing.Point(479, 271);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(271, 27);
             this.dateTimePicker1.TabIndex = 36;

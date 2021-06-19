@@ -42,9 +42,10 @@ namespace WinFormsApp1
             // 
             this.radioButton2.AutoSize = true;
             this.radioButton2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton2.Location = new System.Drawing.Point(124, 237);
+            this.radioButton2.Location = new System.Drawing.Point(63, 313);
+            this.radioButton2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(270, 21);
+            this.radioButton2.Size = new System.Drawing.Size(351, 27);
             this.radioButton2.TabIndex = 49;
             this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Delete Student By Registration Number";
@@ -55,9 +56,10 @@ namespace WinFormsApp1
             // 
             this.radioButton1.AutoSize = true;
             this.radioButton1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.radioButton1.Location = new System.Drawing.Point(124, 160);
+            this.radioButton1.Location = new System.Drawing.Point(63, 202);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(174, 21);
+            this.radioButton1.Size = new System.Drawing.Size(222, 27);
             this.radioButton1.TabIndex = 48;
             this.radioButton1.TabStop = true;
             this.radioButton1.Text = "Delete Teacher by Email";
@@ -66,10 +68,9 @@ namespace WinFormsApp1
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(400, 235);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox2.Location = new System.Drawing.Point(457, 313);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(277, 23);
+            this.textBox2.Size = new System.Drawing.Size(316, 27);
             this.textBox2.TabIndex = 47;
             // 
             // button4
@@ -77,10 +78,9 @@ namespace WinFormsApp1
             this.button4.BackColor = System.Drawing.Color.Red;
             this.button4.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(330, 373);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(377, 497);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(186, 51);
+            this.button4.Size = new System.Drawing.Size(213, 68);
             this.button4.TabIndex = 46;
             this.button4.Text = "Go Back";
             this.button4.UseVisualStyleBackColor = false;
@@ -91,10 +91,9 @@ namespace WinFormsApp1
             this.button1.BackColor = System.Drawing.Color.YellowGreen;
             this.button1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(366, 297);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Location = new System.Drawing.Point(418, 396);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 57);
+            this.button1.Size = new System.Drawing.Size(142, 76);
             this.button1.TabIndex = 45;
             this.button1.Text = "Delete";
             this.button1.UseVisualStyleBackColor = false;
@@ -102,28 +101,27 @@ namespace WinFormsApp1
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(400, 161);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.textBox1.Location = new System.Drawing.Point(457, 215);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(284, 23);
+            this.textBox1.Size = new System.Drawing.Size(324, 27);
             this.textBox1.TabIndex = 44;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(219, 37);
+            this.label3.Location = new System.Drawing.Point(250, 49);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(497, 55);
+            this.label3.Size = new System.Drawing.Size(625, 68);
             this.label3.TabIndex = 50;
             this.label3.Text = "Delete Student/Teacher";
             // 
             // Form6
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Khaki;
-            this.ClientSize = new System.Drawing.Size(911, 452);
+            this.ClientSize = new System.Drawing.Size(1041, 603);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.radioButton2);
             this.Controls.Add(this.radioButton1);
@@ -131,7 +129,6 @@ namespace WinFormsApp1
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Form6";
             this.Text = "Form6";
             this.ResumeLayout(false);

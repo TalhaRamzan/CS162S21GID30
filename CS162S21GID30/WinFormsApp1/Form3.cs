@@ -45,5 +45,12 @@ namespace WinFormsApp1
             Form10 f10= new Form10();
             f10.ShowDialog();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form11 f11 = new Form11();
+            f11.ShowDialog();
+        }
     }
 }

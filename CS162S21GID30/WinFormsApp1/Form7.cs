@@ -30,31 +30,72 @@ namespace WinFormsApp1
             if (radioButton1.Checked)
             {
                 Person.Obj.flag = true;
-                if (Teacher.TeacherObj.getList().ElementAt(0).Email == textBox1.Text)
+                try
                 {
+                    Boolean flag = false;
+                    for (int i = 0; i < Teacher.TeacherObj.getList().Count; i++)
+                    {
+                        if (Teacher.TeacherObj.getList().ElementAt(i).Email == textBox1.Text)
+                        {
+                            flag = true;
+                            Person.Obj.ind = i;
+                            break;
+                        }
+                    }
+                        if (flag == true)
+                        {
+                        DialogResult result = MessageBox.Show("Teacher Found", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                            this.Hide();
+                            Form8 f8 = new Form8();
+                            f8.ShowDialog();
+                        }
+                    if (flag == false)
+                    {
+                        MessageBox.Show("Teacher Not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                    }
 
-                    this.Hide();
-                    Form8 f8 = new Form8();
-                    f8.ShowDialog();
+                    
                 }
-                else
+                catch (Exception t)
                 {
-                    MessageBox.Show("Teacher Not Found", "Rewrite Email", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show(t.Message);
+                    MessageBox.Show("Something went wrong." +
+                        "Enter data again", "CMS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
 
             }
             if(radioButton2.Checked)
             { Person.Obj.flag = false;
-            if (Student.Obj.getList().ElementAt(0).Rollno == textBox2.Text)
+                try
                 {
+                    Boolean flag = false;
+                    for (int i = 0; i<Student.Obj.getList().Count; i++)
+                    {
+                        if (Student.Obj.getList().ElementAt(i).Rollno== textBox2.Text)
+                        {
+                            flag = true;
+                            Person.Obj.ind = i;
+                            break;
+                        }
+                    }
+                    if (flag == true)
+                    {
 
-                    this.Hide();
-                    Form8 f8 = new Form8();
-                    f8.ShowDialog();
+                       
+                        DialogResult result = MessageBox.Show("Student Found", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                        this.Hide();
+                        Form8 f8 = new Form8();
+                        f8.ShowDialog();
+                    }
+                    if (flag == false)
+                    {
+                        MessageBox.Show("Student Not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
                 }
-                else
-                {
-                    MessageBox.Show("Student Not Found", "Rewrite Registration Number", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                catch (Exception t) {
+                    MessageBox.Show(t.Message);
+                    MessageBox.Show("Something went wrong." +
+                            "Enter data again", "CMS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
 

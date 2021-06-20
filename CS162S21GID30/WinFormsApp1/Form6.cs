@@ -61,37 +61,95 @@ namespace WinFormsApp1
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            // DialogResult d;
-            //d = MessageBox.Show("Are you sure you want to delete this ID?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            //if (d == DialogResult.Yes)
-            //{
-            //  MessageBox.Show("ID has been successfully deleted.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
+            int index=0;
+            int Sindex = 0;
+           
+
             if (radioButton1.Checked)
             {
                 
-                if (Teacher.TeacherObj.getList().ElementAt(0).Email == textBox1.Text)
+                try
                 {
+                    Boolean flag = false;
+                    for (int i = 0; i < Teacher.TeacherObj.getList().Count; i++)
+                    {
+                        if (Teacher.TeacherObj.getList().ElementAt(i).Email == textBox1.Text)
+                        {
+                            index = i;
+                            flag = true;
+                            break;
+                        }
+                        
 
-                    MessageBox.Show("In Teacher delete");
-                }
-                else
+                        
+                    }
+                 
+                    DialogResult result=DialogResult.No;
+                    if (flag == true)
+                    {
+                           result=  MessageBox.Show("Teacher Found\nDo you want to delete it? ", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    }
+                    if (result == DialogResult.Yes)
+                    { 
+                        Teacher.TeacherObj.getList().RemoveAt(index);
+                        MessageBox.Show("ID has been successfully deleted.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    }
+                    if (result == DialogResult.No)
+                    {
+                        MessageBox.Show("Teacher not Deleted");                
+                    }
+                    if(flag==false)
+                    { MessageBox.Show("Teacher Not Found", "Rewrite Registration Number", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
+
+                }catch(Exception t)
                 {
-                    MessageBox.Show("Teacher Not Found", "Rewrite Email", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show(t.Message);
+                    MessageBox.Show("Something went wrong." +
+                           "Enter data again", "CMS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
-
             }
             if (radioButton2.Checked)
             {
-              
-                if (Student.Obj.getList().ElementAt(0).Rollno == textBox2.Text)
+                try
                 {
-                    MessageBox.Show("In Student delete");
+                    Boolean flag = false;
+                    for (int i = 0; i < Student.Obj.getList().Count; i++)
+                    {
+                        if (Student.Obj.getList().ElementAt(i).Rollno == textBox2.Text)
+                        {
+                            Sindex = i;
+                            flag = true;
+                           
+                            break;
+
+                        }
+                    }
+
+                    DialogResult result = DialogResult.No;
+                    if (flag == true)
+                    {
+                        result = MessageBox.Show("Student Found\nDo you want to delete it? ", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    }
+                    if (result == DialogResult.Yes)
+                    {
+                       
+                        Student.Obj.getList().RemoveAt(Sindex);
+                        MessageBox.Show("ID has been successfully deleted.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    if (result == DialogResult.No)
+                    {
+                        MessageBox.Show("Student not Deleted");
+                    }
+                    if (flag == false)
+                    { MessageBox.Show("Student Not Found", "Rewrite Registration Number", MessageBoxButtons.OK, MessageBoxIcon.Exclamation); }
 
                 }
-                else
+                catch (Exception t)
                 {
-                    MessageBox.Show("Student Not Found", "Rewrite Registration Number", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    MessageBox.Show(t.Message);
+                    MessageBox.Show("Something went wrong." +
+                         "Enter data again", "CMS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                 }
             }
 

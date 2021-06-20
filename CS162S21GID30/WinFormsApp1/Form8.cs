@@ -50,7 +50,49 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Changes have been successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            // MessageBox.Show("Changes have been successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            if (Person.Obj.flag == true)
+            {
+                MessageBox.Show(" " + Person.Obj.ind);
+                Student S = new Student();
+                S.Name = textBox1.Text;
+                S.DOB = Convert.ToDateTime(dateTimePicker1.Value);
+                S.Gender = comboBox1.Text;
+                S.Email = textBox5.Text;
+                if (textBox4.Text == textBox2.Text)
+                {
+                    S.Password = textBox4.Text;
+
+                }
+
+                else
+                { MessageBox.Show("Password Does not match", "Rewrite Password", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning); }
+                S.Rollno = textBox7.Text;
+                S.Section = textBox8.Text;
+                Student.Obj.getList().Insert(Person.Obj.ind, S);
+            }
+            if (Person.Obj.flag == false)
+            {
+                MessageBox.Show(" "+Person.Obj.ind);
+                Teacher T = new Teacher();
+                T.Name = textBox1.Text;
+                T.DOB = Convert.ToDateTime(dateTimePicker1.Value);
+                T.Gender = comboBox1.Text;
+                T.Email = textBox5.Text;
+                if (textBox4.Text == textBox2.Text)
+                {
+                    T.Password = textBox4.Text;
+
+                }
+
+                else
+                { MessageBox.Show("Password Does not match", "Rewrite Password", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning); }
+                T.Subject = textBox6.Text;
+                T.Qualifation = textBox9.Text;
+    
+                Teacher.TeacherObj.getList().Insert(Person.Obj.ind, T);
+            }
         }
 
        
@@ -74,6 +116,14 @@ namespace WinFormsApp1
 
         }
 
-      
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

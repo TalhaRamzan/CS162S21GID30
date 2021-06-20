@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace WinFormsApp1
@@ -49,49 +42,69 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            String a = textBox1.Text;
-            String b = textBox2.Text;
-            if (a == "Admin" && b == "Admin")
+            /* String a = textBox1.Text;
+             String b = textBox2.Text;
+             if (a == "Admin" && b == "Admin")
+             {
+
+                 if (radioButton1.Checked == true)
+                 {
+                     this.Hide();
+                     Form2 f2 = new Form2(); //this is the change, code for redirect  
+                     f2.ShowDialog();
+                 }
+                 else if (radioButton2.Checked == true)
+                 {
+                     this.Hide();
+                     Form3 f3 = new Form3(); //this is the change, code for redirect  
+                     f3.ShowDialog();
+
+                 }
+
+                 else if (radioButton3.Checked == true)
+                 {
+                     this.Hide();
+                     Form4 f4 = new Form4(); //this is the change, code for redirect  
+                     f4.ShowDialog();
+
+                 }
+                 else
+                 {
+                     MessageBox.Show("Please Select a User.","Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                 }
+
+             }
+           else if (a == "" || b == "")
+             {
+                 MessageBox.Show("Username or password cannot be left empty.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);                
+             }
+             else
+             {
+                 MessageBox.Show("Please enter username and password again.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+             }*/
+            if (radioButton1.Checked == true)
             {
-
-                if (radioButton1.Checked == true)
-                {
-                    this.Hide();
-                    Form2 f2 = new Form2(); //this is the change, code for redirect  
-                    f2.ShowDialog();
-                }
-                else if (radioButton2.Checked == true)
-                {
-                    this.Hide();
-                    Form3 f3 = new Form3(); //this is the change, code for redirect  
-                    f3.ShowDialog();
-
-                }
-
-                else if (radioButton3.Checked == true)
-                {
-                    this.Hide();
-                    Form4 f4 = new Form4(); //this is the change, code for redirect  
-                    f4.ShowDialog();
-
-                }
-                else
-                {
-                    MessageBox.Show("Please Select a User.","Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                this.Hide();
+                Form2 f2 = new Form2(); //this is the change, code for redirect  
+                f2.ShowDialog();
+            }
+            else if (radioButton2.Checked == true)
+            {
+                this.Hide();
+                Form3 f3 = new Form3(); //this is the change, code for redirect  
+                f3.ShowDialog();
+            }
+            else if (radioButton3.Checked == true)
+            {
+                this.Hide();
+                Form4 f4 = new Form4(); //this is the change, code for redirect  
+                f4.ShowDialog();
 
             }
-            else if (a == "" || b == "")
-            {
-                MessageBox.Show("Username or password cannot be left empty.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);                
-            }
-            else
-            {
-                MessageBox.Show("Please enter username and password again.", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
         }
 
-        private void button2_Click(object sender, EventArgs e)
+            private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Zehan Pr Zor Daal.");
         }

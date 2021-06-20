@@ -23,6 +23,7 @@ namespace WinFormsApp1
             }
         }
         public Boolean flag=false;
+        public int ind=0;
         private string name;
         private DateTime dOB;
         private string password;

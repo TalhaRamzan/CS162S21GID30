@@ -25,13 +25,15 @@ namespace WinFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-            
-        }
+       
 
         private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+      
+        private void Form11_Load(object sender, EventArgs e)
         {
 
         }
@@ -39,11 +41,11 @@ namespace WinFormsApp1
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Form3 f3 = new Form3();
+            Form2 f3 = new Form2();
             f3.ShowDialog();
         }
 
-        private void Form11_Load(object sender, EventArgs e)
+        private void Teacher_Click(object sender, EventArgs e)
         {
 
         }

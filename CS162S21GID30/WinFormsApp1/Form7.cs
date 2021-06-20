@@ -45,10 +45,11 @@ namespace WinFormsApp1
                         if (flag == true)
                         {
                         DialogResult result = MessageBox.Show("Teacher Found", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                            this.Hide();
-                            Form8 f8 = new Form8();
+                        this.Hide();
+                        Form8 f8 = new Form8();
                             f8.ShowDialog();
-                        }
+                        
+                    }
                     if (flag == false)
                     {
                         MessageBox.Show("Teacher Not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
@@ -83,9 +84,10 @@ namespace WinFormsApp1
 
                        
                         DialogResult result = MessageBox.Show("Student Found", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-                        this.Hide();
                         Form8 f8 = new Form8();
                         f8.ShowDialog();
+                        this.Hide();
+                      
                     }
                     if (flag == false)
                     {

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -50,12 +51,14 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Teacher T = new Teacher();
+            Student S = new Student();
 
             // MessageBox.Show("Changes have been successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             if (Person.Obj.flag == true)
             {
                 MessageBox.Show(" " + Person.Obj.ind);
-                Student S = new Student();
+                
                 S.Name = textBox1.Text;
                 S.DOB = Convert.ToDateTime(dateTimePicker1.Value);
                 S.Gender = comboBox1.Text;
@@ -75,7 +78,7 @@ namespace WinFormsApp1
             if (Person.Obj.flag == false)
             {
                 MessageBox.Show(" "+Person.Obj.ind);
-                Teacher T = new Teacher();
+               
                 T.Name = textBox1.Text;
                 T.DOB = Convert.ToDateTime(dateTimePicker1.Value);
                 T.Gender = comboBox1.Text;
@@ -90,8 +93,11 @@ namespace WinFormsApp1
                 { MessageBox.Show("Password Does not match", "Rewrite Password", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning); }
                 T.Subject = textBox6.Text;
                 T.Qualifation = textBox9.Text;
-    
-                Teacher.TeacherObj.getList().Insert(Person.Obj.ind, T);
+                // MessageBox.Show(" Before  " + Teacher.TeacherObj.getList().ElementAt(Person.Obj.ind).Email);
+                // Teacher.TeacherObj.getList().Insert(Person.Obj.ind, T);
+                // MessageBox.Show(" After  " +Teacher.TeacherObj.getList().ElementAt(Person.Obj.ind).Email);
+                //  Teacher.TeacherObj.getList().RemoveAt(Person.Obj.ind);
+                //Teacher.TeacherObj.getList().Insert(Person.Obj.ind, T);
             }
         }
 

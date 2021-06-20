@@ -55,7 +55,7 @@ namespace WinFormsApp1
             Student S = new Student();
 
             // MessageBox.Show("Changes have been successfully.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            if (Person.Obj.flag == true)
+            if (Person.Obj.flag == false)
             {
                 MessageBox.Show(" " + Person.Obj.ind);
                 
@@ -73,31 +73,42 @@ namespace WinFormsApp1
                 { MessageBox.Show("Password Does not match", "Rewrite Password", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning); }
                 S.Rollno = textBox7.Text;
                 S.Section = textBox8.Text;
+                // Student.Obj.getList().Insert(Person.Obj.ind, S);
+                Student.Obj.getList().RemoveAt(Person.Obj.ind);
                 Student.Obj.getList().Insert(Person.Obj.ind, S);
             }
-            if (Person.Obj.flag == false)
+            if (Person.Obj.flag == true)
             {
-                MessageBox.Show(" "+Person.Obj.ind);
-               
+
+             
                 T.Name = textBox1.Text;
+               
                 T.DOB = Convert.ToDateTime(dateTimePicker1.Value);
+          
                 T.Gender = comboBox1.Text;
+               
                 T.Email = textBox5.Text;
+             
                 if (textBox4.Text == textBox2.Text)
                 {
+                    
                     T.Password = textBox4.Text;
 
                 }
 
                 else
-                { MessageBox.Show("Password Does not match", "Rewrite Password", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning); }
+                {
+                    
+                    MessageBox.Show("Password Does not match", "Rewrite Password", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning); }
+
+      
                 T.Subject = textBox6.Text;
                 T.Qualifation = textBox9.Text;
                 // MessageBox.Show(" Before  " + Teacher.TeacherObj.getList().ElementAt(Person.Obj.ind).Email);
                 // Teacher.TeacherObj.getList().Insert(Person.Obj.ind, T);
                 // MessageBox.Show(" After  " +Teacher.TeacherObj.getList().ElementAt(Person.Obj.ind).Email);
-                //  Teacher.TeacherObj.getList().RemoveAt(Person.Obj.ind);
-                //Teacher.TeacherObj.getList().Insert(Person.Obj.ind, T);
+                 Teacher.TeacherObj.getList().RemoveAt(Person.Obj.ind);
+                Teacher.TeacherObj.getList().Insert(Person.Obj.ind, T);
             }
         }
 

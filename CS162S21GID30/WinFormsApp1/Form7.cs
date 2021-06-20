@@ -30,8 +30,8 @@ namespace WinFormsApp1
             if (radioButton1.Checked)
             {
                 Person.Obj.flag = true;
-                try
-                {
+              //  try
+               // {
                     Boolean flag = false;
                     for (int i = 0; i < Teacher.TeacherObj.getList().Count; i++)
                     {
@@ -56,19 +56,19 @@ namespace WinFormsApp1
                     }
 
                     
-                }
-                catch (Exception t)
+              //  }
+               /* catch (Exception t)
                 {
                     MessageBox.Show(t.Message);
                     MessageBox.Show("Something went wrong." +
                         "Enter data again", "CMS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
+                }*/
 
             }
             if(radioButton2.Checked)
             { Person.Obj.flag = false;
-                try
-                {
+//          try
+            //    {
                     Boolean flag = false;
                     for (int i = 0; i<Student.Obj.getList().Count; i++)
                     {
@@ -93,12 +93,12 @@ namespace WinFormsApp1
                     {
                         MessageBox.Show("Student Not Found", "Error", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                     }
-                }
-                catch (Exception t) {
+             //   }
+              /*  catch (Exception t) {
                     MessageBox.Show(t.Message);
                     MessageBox.Show("Something went wrong." +
                             "Enter data again", "CMS", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                }
+                }*/
             }
 
 

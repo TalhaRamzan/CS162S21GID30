@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Runtime.InteropServices;
-//using Excel = Microsoft.Office.Interop.Excel;
+using Excel = Microsoft.Office.Interop.Excel;
 using System.Linq;
 using System.Windows.Forms;
 
@@ -10,28 +10,28 @@ namespace WinFormsApp1
 {
     class Student : Person
     {
-       // Excel.Application xlApp = new Excel.Application();
+        Excel.Application xlApp = new Excel.Application();
         List<Student> list = new List<Student>();
         public static Student obj = null;
         public void saveData()
         {
             try
             {
-               // Excel.Workbook xlWorkBook;
+               Excel.Workbook xlWorkBook;
 
-               // Excel.Worksheet xlWorkSheet;
+               Excel.Worksheet xlWorkSheet;
 
                 object misValue = System.Reflection.Missing.Value;
 
 
 
-                //xlWorkBook = xlApp.Workbooks.Add(misValue);
+                xlWorkBook = xlApp.Workbooks.Add(misValue);
 
-                //xlWorkSheet = (Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
+                xlWorkSheet = (Excel.Worksheet)xlWorkBook.Worksheets.get_Item(1);
 
 
 
-              /*xlWorkSheet.Cells[1, 1] = "Student Name";
+              xlWorkSheet.Cells[1, 1] = "Student Name";
                 xlWorkSheet.Cells[1, 2] = "Student Gender";
                 xlWorkSheet.Cells[1, 3] = "Student DOB";
                 xlWorkSheet.Cells[1, 4] = "Student Email";
@@ -75,7 +75,7 @@ namespace WinFormsApp1
 
                 Marshal.ReleaseComObject(xlWorkBook);
 
-               Marshal.ReleaseComObject(xlApp);*/
+               Marshal.ReleaseComObject(xlApp);
             }
             catch(Exception e)
             {

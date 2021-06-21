@@ -163,7 +163,7 @@ namespace WinFormsApp1
                 Teacher.TeacherObj.setlist(T);
              //   MessageBox.Show(Teacher.Obj.getList().ElementAt(0).Subject); //Checking List 
             }
-           // Student.Obj.saveData();
+            Student.Obj.saveData();
             //MessageBox.Show("ID has been successfully saved.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 

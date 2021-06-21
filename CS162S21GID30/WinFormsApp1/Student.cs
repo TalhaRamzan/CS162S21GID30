@@ -31,7 +31,7 @@ namespace WinFormsApp1
 
 
 
-              xlWorkSheet.Cells[1, 1] = "Student Name";
+                xlWorkSheet.Cells[1, 1] = "Student Name";
                 xlWorkSheet.Cells[1, 2] = "Student Gender";
                 xlWorkSheet.Cells[1, 3] = "Student DOB";
                 xlWorkSheet.Cells[1, 4] = "Student Email";
@@ -42,17 +42,17 @@ namespace WinFormsApp1
 
                 for (int i = 0; i < list.Count; i++)
                 {
-                    MessageBox.Show("File have been saved first .");
+                   // MessageBox.Show("File have been saved first .");
                     for (int j = 0; j < list.Count; j++)
                     {
-                        MessageBox.Show("File have been saved second.");
-                        xlWorkSheet.Cells[i + 2, 1] = Student.Obj.getList().ElementAt(j).Name;
-                        xlWorkSheet.Cells[i + 2, 2] = Student.Obj.getList().ElementAt(j).Gender;
-                        xlWorkSheet.Cells[i + 2, 3] = Student.Obj.getList().ElementAt(j).DOB;
-                        xlWorkSheet.Cells[i + 2, 4] = Student.Obj.getList().ElementAt(j).Email;
-                        xlWorkSheet.Cells[i + 2, 5] = Student.Obj.getList().ElementAt(j).Password;
-                        xlWorkSheet.Cells[i + 2, 6] = Student.Obj.getList().ElementAt(j).Rollno;
-                        xlWorkSheet.Cells[i + 2, 7] = Student.Obj.getList().ElementAt(j).Section;
+                        //MessageBox.Show("File have been saved second.");
+                        xlWorkSheet.Cells[i + 2, 1] = Student.Obj.getList().ElementAt(i).Name;
+                        xlWorkSheet.Cells[i + 2, 2] = Student.Obj.getList().ElementAt(i).Gender;
+                        xlWorkSheet.Cells[i + 2, 3] = Student.Obj.getList().ElementAt(i).DOB;
+                        xlWorkSheet.Cells[i + 2, 4] = Student.Obj.getList().ElementAt(i).Email;
+                        xlWorkSheet.Cells[i + 2, 5] = Student.Obj.getList().ElementAt(i).Password;
+                        xlWorkSheet.Cells[i + 2, 6] = Student.Obj.getList().ElementAt(i).Rollno;
+                        xlWorkSheet.Cells[i + 2, 7] = Student.Obj.getList().ElementAt(i).Section;
                     }
 
                 }

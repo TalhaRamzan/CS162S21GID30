@@ -15,8 +15,8 @@ namespace WinFormsApp1
         public static Student obj = null;
         public void saveData()
         {
-            try
-            {
+           // try
+            //{
                Excel.Workbook xlWorkBook;
 
                Excel.Worksheet xlWorkSheet;
@@ -31,13 +31,13 @@ namespace WinFormsApp1
 
 
 
-                xlWorkSheet.Cells[1, 1] = "Student Name";
-                xlWorkSheet.Cells[1, 2] = "Student Gender";
-                xlWorkSheet.Cells[1, 3] = "Student DOB";
-                xlWorkSheet.Cells[1, 4] = "Student Email";
-                xlWorkSheet.Cells[1, 5] = "Student Password";
-                xlWorkSheet.Cells[1, 6] = "Student RollNumber";
-                xlWorkSheet.Cells[1, 7] = "Student Section";
+                xlWorkSheet.Cells[1, 1] = "Name";
+                xlWorkSheet.Cells[1, 2] = "Gender";
+                xlWorkSheet.Cells[1, 3] = "DOB";
+                xlWorkSheet.Cells[1, 4] = "Email";
+                xlWorkSheet.Cells[1, 5] = "Password";
+                xlWorkSheet.Cells[1, 6] = "RollNumber";
+                xlWorkSheet.Cells[1, 7] = "Section";
 
 
                 for (int i = 0; i < list.Count; i++)
@@ -63,7 +63,7 @@ namespace WinFormsApp1
 
                 MessageBox.Show("File have been saved.");
 
-                xlWorkBook.SaveAs(@"C:\Student.xls", Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
+                xlWorkBook.SaveAs(@"D:\SData.xls", Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
 
                 xlWorkBook.Close(true, misValue, misValue);
 
@@ -76,11 +76,11 @@ namespace WinFormsApp1
                 Marshal.ReleaseComObject(xlWorkBook);
 
                Marshal.ReleaseComObject(xlApp);
-            }
-            catch(Exception e)
+            //}
+           /* catch(Exception e)
             {
                 MessageBox.Show("Your data is not been handled");
-            }
+            }*/
             
         }
 

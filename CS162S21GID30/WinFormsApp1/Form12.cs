@@ -26,5 +26,11 @@ namespace WinFormsApp1
             Form2 f2 = new Form2();
             f2.ShowDialog();
         }
+
+        private void Form12_Load(object sender, EventArgs e)
+        {
+            this.dataGridView1.Rows.Clear();
+           dataGridView1.DataSource =Student.Obj.getList();
+        }
     }
 }

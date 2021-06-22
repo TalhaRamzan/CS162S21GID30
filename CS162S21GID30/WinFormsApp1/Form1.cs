@@ -42,6 +42,7 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             /* String a = textBox1.Text;
              String b = textBox2.Text;
              if (a == "Admin" && b == "Admin")
@@ -112,6 +113,13 @@ namespace WinFormsApp1
         private void Form1_Load(object sender, EventArgs e)
         {
 
+            OpenFile();
+        }
+        public void OpenFile()
+        {
+          Datahandling h = new Datahandling(@"D:\SData.xls", 1);
+        //  MessageBox.Show(h.ReadCell(1,0),"Yehi ha");
+           h.AddinList();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

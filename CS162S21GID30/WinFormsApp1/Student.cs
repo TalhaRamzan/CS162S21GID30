@@ -12,7 +12,7 @@ namespace WinFormsApp1
     {
         Excel.Application xlApp = new Excel.Application();
         List<Student> list = new List<Student>();
-        public static Student obj = null;
+        public static Student obj = null; 
         public void saveData()
         {
            // try
@@ -63,7 +63,7 @@ namespace WinFormsApp1
 
                 MessageBox.Show("File have been saved.");
 
-                xlWorkBook.SaveAs(@"D:\SData.xls", Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
+                xlWorkBook.SaveAs(@"D:\Dataa.xls", Excel.XlFileFormat.xlWorkbookNormal, misValue, misValue, misValue, misValue, Excel.XlSaveAsAccessMode.xlExclusive, misValue, misValue, misValue, misValue, misValue);
 
                 xlWorkBook.Close(true, misValue, misValue);
 

@@ -29,6 +29,13 @@ namespace WinFormsApp1
 
         private void Form14_Load(object sender, EventArgs e)
         {
+        //    list<student> list = new list<student>();
+        //    for (int i = 0; i < student.obj.getlist().count; i++)
+        //    {
+        //        list.add(student.obj);
+        //        messagebox.show(" " + student.obj.getlist());
+        //    }
+
             dataGridView1.DataSource = Student.Obj.getList();
         }
 

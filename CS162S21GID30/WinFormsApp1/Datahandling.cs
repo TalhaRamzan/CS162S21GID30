@@ -44,16 +44,16 @@ namespace WinFormsApp1
             int lastUsedColumn = last.Column;
             MessageBox.Show(" " + lastUsedColumn);
             MessageBox.Show(" " + lastUsedRow);
-            for (int row = 0; row < (lastUsedRow - 2); row++)
+            for (int row = 0; row < (lastUsedRow - 1); row++)
             {
 
-                MessageBox.Show(" " + (row + 2));
+             
                 int f = 0;
 
                 String Namee = ReadCell((row + 1), 0);
 
                 Student.Obj.Name = Namee;
-
+                //MessageBox.Show(Namee);
                 Student.Obj.Gender = ReadCell((row + 1), 1);
 
                 //  Stud.DOB = Convert.ToDateTime(ReadCell(i, j + 2))
@@ -68,8 +68,9 @@ namespace WinFormsApp1
 
 
                 Student.Obj.setlist(Student.Obj);
-                
+
             }
+            
         }
     }
 }

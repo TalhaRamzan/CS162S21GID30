@@ -113,13 +113,13 @@ namespace WinFormsApp1
         private void Form1_Load(object sender, EventArgs e)
         {
 
-            OpenFile();
+           OpenFile();
         }
         public void OpenFile()
         {
-          Datahandling h = new Datahandling(@"D:\SData.xls", 1);
-        //  MessageBox.Show(h.ReadCell(1,0),"Yehi ha");
-           h.AddinList();
+          Datahandling h = new Datahandling(@"D:\Dataa.xls", 1);
+          MessageBox.Show(h.ReadCell(1,0),"Yehi ha");
+          h.AddinList();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

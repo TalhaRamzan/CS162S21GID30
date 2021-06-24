@@ -117,9 +117,9 @@ namespace WinFormsApp1
         }
         public void OpenFile()
         {
-          Datahandling h = new Datahandling(@"D:\Dataa.xls", 1);
-          MessageBox.Show(h.ReadCell(1,0),"Yehi ha");
-          h.AddinList();
+            Datahandling h = new Datahandling(@"C:\Dataa.xls", 1);
+            MessageBox.Show(h.ReadCell(1,0),"Yehi ha");
+            h.AddinList();
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

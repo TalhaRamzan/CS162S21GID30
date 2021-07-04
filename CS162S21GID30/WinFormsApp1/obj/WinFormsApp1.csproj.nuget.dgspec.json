@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj": {}
+    "C:\\Users\\Syed Bilal Hashmi\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj": {
+    "C:\\Users\\Syed Bilal Hashmi\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj",
+        "projectUniqueName": "C:\\Users\\Syed Bilal Hashmi\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj",
         "projectName": "WinFormsApp1",
-        "projectPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj",
-        "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\obj\\",
+        "projectPath": "C:\\Users\\Syed Bilal Hashmi\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\WinFormsApp1.csproj",
+        "packagesPath": "C:\\Users\\Syed Bilal Hashmi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Syed Bilal Hashmi\\Documents\\GitHub\\CS162S21GID30\\CS162S21GID30\\WinFormsApp1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Syed Bilal Hashmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

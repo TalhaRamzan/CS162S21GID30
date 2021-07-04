@@ -124,10 +124,16 @@ namespace WinFormsApp1
         }
         public void OpenFile()
         {
+<<<<<<< HEAD
             Datahandling h = new Datahandling(@"D:\Dataa.xls", 1);
             h.AddinList();
             TeacherData Teach = new TeacherData(@"D:\TData.xls", 1);
             Teach.AddinList();
+=======
+            Datahandling h = new Datahandling(@"C:\Dataa.xls", 1);
+            MessageBox.Show(h.ReadCell(1,0),"Yehi ha");
+            h.AddinList();
+>>>>>>> e32ad4f2a8ec1edfe1301f4312419380d79ce38a
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

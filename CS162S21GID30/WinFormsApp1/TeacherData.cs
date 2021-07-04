@@ -9,15 +9,14 @@ using System.Linq;
 
 namespace WinFormsApp1
 {
-    class Datahandling
+    class TeacherData
     {
-
-        Student Stud = new Student();
+        Teacher Stud = new Teacher();
         String path = "";
         _Application excel = new Excel.Application();
         Workbook wb;
         Worksheet ws;
-        public Datahandling(String path, int sheet)
+        public TeacherData(String path, int sheet)
         {
             this.path = path;
             wb = excel.Workbooks.Open(path);
@@ -43,27 +42,28 @@ namespace WinFormsApp1
 
             int lastUsedRow = last.Row;
             int lastUsedColumn = last.Column;
-           // MessageBox.Show(" " + lastUsedColumn);
-            //MessageBox.Show(" " + lastUsedRow);
+       
             for (int row = 0; row < (lastUsedRow - 1); row++)
             {
-               Stud = new Student();
-                String Namee = ReadCell((row+1), 0);
+                Stud = new Teacher();
+                String Namee = ReadCell((row + 1), 0);
 
                 Stud.Name = Namee;
-                //MessageBox.Show(Namee);
-                Stud.Gender = ReadCell((row+1), 1);
+           
+                Stud.Gender = ReadCell((row + 1), 1);
+                Stud.DOB = Convert.ToDateTime(ReadCell((row + 1), 2));
 
-                Stud.DOB = Convert.ToDateTime(ReadCell((row+1),2)); 
-                Stud.Email = ReadCell((row + 1), 3);
-
+                Stud.Email = ReadCell((row + 1),3);
                 Stud.Password = ReadCell((row + 1), 4);
 
-                Stud.Rollno = ReadCell((row + 1), 5);
-                Stud.Section = ReadCell((row + 1), 6);
-                Student.Obj.setlist(Stud);
-   }
-            
+                Stud.Subject = ReadCell((row + 1), 5);
+
+                Stud.Qualifation = ReadCell((row + 1), 6);
+                Teacher.TeacherObj.setlist(Stud);
+
+
+            }
+
         }
     }
 }

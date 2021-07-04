@@ -67,7 +67,6 @@ namespace WinFormsApp1
 
             if (radioButton1.Checked)
             {
-                
                 try
                 {
                     Boolean flag = false;
@@ -172,6 +171,21 @@ namespace WinFormsApp1
                 textBox2.Enabled = true;
                 textBox1.Enabled = false;
             }
+
+        }
+
+        private void textBox2_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form6_Load(object sender, EventArgs e)
+        {
 
         }
     }

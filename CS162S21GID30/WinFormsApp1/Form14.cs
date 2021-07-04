@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -13,6 +14,7 @@ namespace WinFormsApp1
         public Form14()
         {
             InitializeComponent();
+            dataGridView1.DataSource = Student.Obj.getList();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -29,14 +31,8 @@ namespace WinFormsApp1
 
         private void Form14_Load(object sender, EventArgs e)
         {
-        //    list<student> list = new list<student>();
-        //    for (int i = 0; i < student.obj.getlist().count; i++)
-        //    {
-        //        list.add(student.obj);
-        //        messagebox.show(" " + student.obj.getlist());
-        //    }
-
-            dataGridView1.DataSource = Student.Obj.getList();
+        
+         
         }
 
         private void dataGridView1_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
@@ -48,6 +44,11 @@ namespace WinFormsApp1
                     e.Value = new string('*', e.Value.ToString().Length);
                 }
             }
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

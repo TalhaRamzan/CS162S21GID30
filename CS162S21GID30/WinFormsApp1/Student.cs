@@ -12,7 +12,7 @@ namespace WinFormsApp1
     {
         Excel.Application xlApp = new Excel.Application();
         List<Student> list = new List<Student>();
-        public static Student obj = null; 
+        private static Student obj = null; 
         public void saveData()
         {
            // try
@@ -84,11 +84,7 @@ namespace WinFormsApp1
             
         }
 
-        private object ElementAt(int j)
-        {
-            throw new NotImplementedException();
-        }
-
+      
         public static Student Obj
         {
             get

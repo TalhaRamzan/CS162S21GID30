@@ -72,10 +72,18 @@ namespace WinFormsApp1
         {
 
         }
-
-        private void button4_Click(object sender, EventArgs e)
+               private void button4_Click(object sender, EventArgs e)
         {
-            Student.Obj.saveData();
+            if (radioButton2.Checked)
+            {
+                Student.Obj.saveData();
+            }
+            if (radioButton1.Checked)
+            {
+                Teacher.TeacherObj.saveTeacherData();
+            }
+
+
             this.Hide();
             Form2 f2 = new Form2();
             f2.ShowDialog();
@@ -98,7 +106,6 @@ namespace WinFormsApp1
             {
                 textBox7.Enabled = false;
                 textBox8.Enabled = false;
-
             }
 
         }
@@ -121,19 +128,18 @@ namespace WinFormsApp1
                 S.DOB = Convert.ToDateTime(dob);
                 S.Gender = gender;
                 S.Email = email;
+                S.Rollno = rnum;
+                S.Section = section;
                 if (password == cpassword)
                 {
                     S.Password = password;
-                  
+                    Student.Obj.setlist(S);
+                    MessageBox.Show("Data Saved", "List Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 else
                 { MessageBox.Show("Password Does not match","Rewrite Password",MessageBoxButtons.RetryCancel,MessageBoxIcon.Warning); }
-                S.Rollno = rnum;
-                S.Section = section;
-                Student.Obj.setlist(S);
-
-             //   MessageBox.Show(Student.Obj.getList().ElementAt(0).Rollno);//Checking List 
+               
 
             }
             if (radioButton1.Checked)
@@ -152,20 +158,20 @@ namespace WinFormsApp1
                 T.DOB = Convert.ToDateTime(dob);
                 T.Gender = gender;
                 T.Email = email;
+                T.Qualifation = Qual;
+                T.Subject = tsub;
                 if (password == cpassword)
                 {
                     T.Password = password;
+                    Teacher.TeacherObj.setlist(T);
+                    MessageBox.Show("Data Saved", "List Data", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 }
 
                 else
                 { MessageBox.Show("Password Does not match", "Rewrite Password", MessageBoxButtons.RetryCancel, MessageBoxIcon.Warning); }
-                T.Qualifation = Qual;
-                T.Subject = tsub;
-                Teacher.TeacherObj.setlist(T);
-             //   MessageBox.Show(Teacher.Obj.getList().ElementAt(0).Subject); //Checking List 
+               
             }
-          //  Student.Obj.saveData();
-            //MessageBox.Show("ID has been successfully saved.", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         private void monthCalendar1_DateChanged(object sender, DateRangeEventArgs e)

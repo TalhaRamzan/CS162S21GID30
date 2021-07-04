@@ -54,10 +54,7 @@ namespace WinFormsApp1
             get { return this.gender; }
             set { this.gender = value; }
         }
-        public List<Person> getlist()
-        {
-            return list;
-        }
+        
 
 
     }
